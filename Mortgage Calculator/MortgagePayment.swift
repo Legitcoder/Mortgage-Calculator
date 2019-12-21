@@ -28,12 +28,23 @@ class MortgagePayment {
         let interest = (MortgagePayment.i)*MortgagePayment.loan
         var principal = payment - interest
         principal += MortgagePayment.basePayment - payment
-        print(MortgagePayment.basePayment)
-        print(interest)
-        print(principal)
         self.interest = interest
         self.principal = principal
         MortgagePayment.loan = MortgagePayment.loan - principal
     }
+    
+    var interestText: String {
+        return String(format: "%.2f", self.interest)
+    }
+    
+    var principalText: String {
+        return String(format: "%.2f", self.principal)
+    }
+    
+    var basePaymentText: String {
+        return String(format: "%.2f", MortgagePayment.basePayment)
+    }
+    
+    
     
 }

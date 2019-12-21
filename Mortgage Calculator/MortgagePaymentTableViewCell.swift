@@ -12,18 +12,15 @@ class MortgagePaymentTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var paymentLabel: UILabel!
-    
-    
     @IBOutlet weak var interestPayment: UILabel!
-    
     @IBOutlet weak var principalPayment: UILabel!
     
     
     private func updateViews() {
         guard let mortgagePayment = mortgagePayment else { return }
-        paymentLabel.text = String(format: "%.2f", MortgagePayment.basePayment)
-        interestPayment.text = String(format: "%.2f", mortgagePayment.interest)
-        principalPayment.text = String(format: "%.2f", mortgagePayment.principal)
+        paymentLabel.text = mortgagePayment.basePaymentText
+        interestPayment.text = mortgagePayment.interestText
+        principalPayment.text = mortgagePayment.principalText
     }
     
     var mortgagePayment: MortgagePayment? {
