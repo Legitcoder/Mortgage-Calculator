@@ -74,8 +74,8 @@
 				A1011E8223AC81F400D6DA1A /* Info.plist */,
 				A1011E7F23AC81F400D6DA1A /* LaunchScreen.storyboard */,
 				A1011E8823AC823D00D6DA1A /* Line.swift */,
-				A1011E8A23AC88E200D6DA1A /* MortgagePayment.swift */,
 				A1835B4E23ADA2E5009B820C /* MortgagePaymentController.swift */,
+				A1011E8A23AC88E200D6DA1A /* MortgagePayment.swift */,
 				A1835B5023ADA8D0009B820C /* MortgagePaymentsTableViewController.swift */,
 				A1835B5223ADA994009B820C /* MortgagePaymentTableViewCell.swift */,
 			);

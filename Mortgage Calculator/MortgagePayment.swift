@@ -17,7 +17,7 @@ class MortgagePayment {
     
     var interest: Double
     var principal: Double
-    
+
     init(loan: Double, interest: Double, term: Double) {
         if MortgagePayment.i == 0.0 { MortgagePayment.i = interest/12.0 }
         if MortgagePayment.loan == 0.0 { MortgagePayment.loan = loan }
